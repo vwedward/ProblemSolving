@@ -3,6 +3,7 @@
  */
 
 package ru.edward.tasks;
+
 /**
  * Решение задачи с собеседования Сулейманова
  * https://www.youtube.com/watch?v=d2d08macAH4&list=PLlsMRoVt5sTMMCwd_gLaaZMkQhzVh9hLA&index=8
