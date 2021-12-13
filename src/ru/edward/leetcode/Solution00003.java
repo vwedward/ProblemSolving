@@ -24,7 +24,6 @@ public class Solution00003 {
             while (charSet.contains(s.charAt(r))) {
                 charSet.remove(s.charAt(l));
                 l++;
-
             }
             charSet.add(s.charAt(r));
             res = Math.max(res, r - l + 1);
