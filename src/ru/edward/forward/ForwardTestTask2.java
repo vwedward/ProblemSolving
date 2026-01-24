@@ -26,7 +26,11 @@ import java.util.stream.Collectors;
 
 public class ForwardTestTask2 {
     public static List<Integer> mapToList(Map<String, List<Integer>> map) {
-        return map.entrySet().stream().sorted((o1, o2) -> (o1.getKey().compareTo(o2.getKey()))).flatMap((t->t.getValue().stream())).collect(Collectors.toList());
+        return map.entrySet().stream().
+                sorted((o1, o2) -> (o1.getKey().compareTo(o2.getKey()))).
+                flatMap((t->t.getValue().
+                        stream())).
+                        collect(Collectors.toList());
         //sorted((o1, o2) -> (o1.getKey().compareTo(o2.getKey())))
         //sorted((o1, o2) -> (o2.getKey().compareTo(o1.getKey())))
         //sorted((o1, o2) -> (o2.getKey().length() - o1.getKey().length()))
