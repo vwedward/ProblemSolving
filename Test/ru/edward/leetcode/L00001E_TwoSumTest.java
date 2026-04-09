@@ -17,14 +17,16 @@ class L00001E_TwoSumTest {
     private static final int target = 9;
     private static final int[] expRes = {0, 1};
 
+    private final L00001E_TwoSum testObject = new L00001E_TwoSum();
+
     @Test
     void twoSum1() {
-        int[] res = L00001E_TwoSum.twoSum1(nums, target);
+        int[] res = testObject.twoSum1(nums, target);
         assertArrayEquals(expRes, res);
     }
     @Test
     void twoSum2() {
-        int[] res = L00001E_TwoSum.twoSum2(nums, target);
+        int[] res = testObject.twoSum2(nums, target);
         assertArrayEquals(expRes, res);
     }
 }

@@ -7,10 +7,10 @@ package ru.edward.leetcode;
 import java.math.BigInteger;
 
 /**
- * Решение задачи №2
+ * Problem 2. Add Two Numbers
  * https://leetcode.com/problems/add-two-numbers/
  */
-public class Solution00002 {
+public class L00002M_AddTwoNumbers {
     //Элемент списка
     public static class ListNode {
         int val;
@@ -58,10 +58,12 @@ public class Solution00002 {
         curNode = null;
         for (int i = 0; i < sumStr.length(); i++) {
             //Первый элемент
+            int val = Integer.parseInt(sumStr.substring(i, i + 1));
+            //int val = sumStr.charAt(i) - '0'; -- как вариант
             if (curNode == null) {
-                curNode = new ListNode(Integer.parseInt(sumStr.substring(i, i + 1)));
+                curNode = new ListNode(val);
             } else {
-                curNode = new ListNode(Integer.parseInt(sumStr.substring(i, i + 1)), curNode);
+                curNode = new ListNode(val, curNode);
             }
         }
         return curNode;
