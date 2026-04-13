@@ -2,14 +2,6 @@
  * ©Edward, 2026
  */
 
-/*
- * ©Edward, 2026
- */
-
-/*
- * ©Edward, 2026
- */
-
 package ru.edward;
 
 import java.util.Arrays;
